@@ -1,9 +1,9 @@
 import React from "react";
 import "./Herrr.css";
-import rightImage from "../assets/images/hero-right1.png"; 
-import google from "../assets/images/msme.png";
-import canva from "../assets/images/iso.png";
-import amazon from "../assets/images/stupind.png";
+import rightImage from "../assets/Images/hero-right1.png"; 
+import google from "../assets/Images/msme.png";
+import canva from "../assets/Images/iso.png";
+import amazon from "../assets/Images/stupind.png";
 // import sketch from "../assets/images/Google.png";
 
 const HeroSection = () => {
