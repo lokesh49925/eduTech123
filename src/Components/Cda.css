@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700&display=swap');
+
+
+.cda-container {
+  background-color: #55568d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cda-content {
+  max-width: 700px;
+  z-index: 10;
+}
+
+.cda-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.cda-subtitle {
+  font-size: 1.1rem;
+  color: #e3e3e3;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+   font-family: "Inter", sans-serif;
+}
+
+.cda-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.business-btn {
+  background-color: #27b3e6;
+  color: white;
+}
+
+.business-btn:hover {
+  background-color: #1e96c5;
+}
+
+.start-btn {
+  background-color: #8a5cf6;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #734ad4;
+}
+
+/* Floating icons */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Icon positions */
+.angular { top: 20%; left: 8%; color: #dd0031; animation-delay: 0s; }
+.react { top: 10%; left: 45%; color: #61dafb; animation-delay: 1s; }
+.graphql { top: 40%; left: 10%; color: #e535ab; animation-delay: 1.5s; }
+.python { bottom: 15%; left: 12%; color: #3776ab; animation-delay: 2s; }
+.js { bottom: 10%; left: 25%; color: #f7df1e; animation-delay: 2.5s; }
+.coffee { top: 18%; right: 12%; color: #ff5e5e; animation-delay: 3s; }
+.sass { bottom: 10%; right: 15%; color: #cc6699; animation-delay: 3.5s; }
+.vue { bottom: 18%; right: 8%; color: #41b883; animation-delay: 4s; }
+.laravel { top: 30%; right: 10%; color: #ff2d20; animation-delay: 4.5s; }
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive */
+@media (min-width: 601px) and (max-width: 768px) {
+  .cda-container {
+    background-color: #55568d;
+    color: white;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+  .cda-title {
+    font-size: 2rem;
+  }
+
+  .cda-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    
+    max-width: 280px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 600px) {
+  .cda-container {
+    background-color: #55568d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+  .cda-title {
+    font-size: 2.0rem;
+    line-height: 40px;
+  }
+
+  .cda-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 12px;
+    max-width: 220px;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,207 @@
+/* ===== Base Styles ===== */
+.privacy-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f8f9fc;
+}
+
+/* ===== Banner Section ===== */
+.banner {
+  background: linear-gradient(119.36deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner-content {
+  flex: 1 1 366px;
+}
+
+.banner-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.banner-content h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+.banner-content p {
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.banner-img {
+  width: 120px;
+  flex: 1 1 150px;
+}
+
+/* ===== Quick Navigation ===== */
+.quick-nav {
+  background: white;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+}
+
+.quick-nav h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  background: #ede7f6;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #6c3faa;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #d1c4e9;
+}
+
+.nav-buttons button.active {
+  background: #915cdb;
+  color: white;
+  font-weight: 600;
+}
+
+/* ===== Policy Cards ===== */
+.privacy-section {
+  width: 90%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.policy-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scroll-margin-top: 120px;
+}
+
+.policy-card img {
+  width: 40px;
+}
+
+.policy-card h3 {
+  color: #4a148c;
+  margin: 5px 0;
+}
+
+.policy-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    text-align: center;
+    flex: 1 1 265px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-img {
+    order: 2;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Tablet (601px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .banner-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav-buttons {
+    justify-content: space-between;
+  }
+
+  .policy-card {
+    padding: 25px;
+  }
+}
+
+/* Laptop (901px–1439px) */
+@media (min-width: 901px) and (max-width: 1439px) {
+  .privacy-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .policy-card {
+    padding: 30px;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Desktop (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .banner {
+    padding: 50px 180px;
+  }
+
+  .privacy-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .policy-card {
+    padding: 30px;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+}

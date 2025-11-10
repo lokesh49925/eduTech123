@@ -1,0 +1,456 @@
+/* Container */
+.aboutus-about-page {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: #374151; /* gray-700 */
+  background: #ffffff;
+  padding: 0;
+}
+.aboutus-container {
+  max-width: 1120px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero */
+.aboutus-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: #585D96; /* purple to violet */
+  color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.aboutus-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.aboutus-hero-title {
+  font-size: 2.25rem;
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+.aboutus-hero-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.95;
+}
+.aboutus-cta-button {
+  background: #ffffff;
+  color: #6d28d9;
+  padding: 0.75rem 1.5rem;
+  width: 152px;
+    height: 50px;
+    border-radius: 15px;
+ 
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(99, 102, 241, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.aboutus-cta-button:hover { transform: scale(1.04); box-shadow: 0 10px 20px rgba(99,102,241,0.16); }
+
+.aboutus-hero-illustration { display:flex; justify-content:center; align-items:center; height:16rem; }
+.aboutus-hero-illustration-box { width:100%;  border-radius: 1rem; }
+
+/* We Are EduCo */
+.aboutus-we-are-educo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: #f9fafb; /* gray-50 */
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.aboutus-section-title { color: #6d28d9; font-size: 1.875rem; margin-bottom: 1rem; font-weight:700; }
+.aboutus-about-text { color:#4b5563; line-height:1.6; }
+
+/* What we offer */
+.offer-section {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #fff;
+}
+
+.offer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 10px;
+}
+
+.offer-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.offer-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.offer-card {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.offer-icon {
+  background-color: #585d96;
+  color: white;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+
+/* Why Choose Us */
+.aboutus-why-choose-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+.aboutus-why-illustration-box { width:100%; height:60vh; border-radius:1rem; background: linear-gradient(135deg,#a78bfa,#7c3aed); }
+.aboutus-why-content .aboutus-why-text { color:#4b5563; margin-bottom:1.25rem; }
+
+/* Features grid */
+.aboutus-features-grid {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.aboutus-feature-card {
+  text-align:center;
+  padding:1rem;
+  background:#f3f4f6;
+  border-radius:0.75rem;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.aboutus-feature-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+.aboutus-feature-icon {
+  width:3rem; height:3rem; border-radius:9999px; background:#6d28d9; color:#fff;
+  display:inline-flex; align-items:center; justify-content:center; margin-bottom:0.5rem;
+}
+.aboutus-feature-title { font-weight:600; text-transform:uppercase; font-size:0.875rem; color:#374151; }
+
+/* Team section */
+.aboutus-team-section {
+  background:#f9fafb; border-radius:1.5rem; padding:2rem; text-align:center;
+}
+.aboutus-team-subtitle { color:#4b5563; margin-bottom:1.5rem; font-size:1.125rem; }
+.aboutus-team-grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1.25rem;
+  max-width:720px;
+  margin:0 auto;
+}
+.aboutus-team-member {
+  background:#fff; border-radius:1rem; padding:1.25rem; box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.aboutus-team-member:hover { transform: translateY(-6px); box-shadow: 0 10px 22px rgba(0,0,0,0.06); }
+.aboutus-team-member-photo { width:100%; height:12rem; border-radius:0.75rem; margin-bottom:0.75rem; background-size:cover; background-position:center; }
+/* gradient utilities (mapped from previous Tailwind-like props) */
+.yellow-orange { background: linear-gradient(135deg,#f6e05e,#fb923c); }
+.green-blue { background: linear-gradient(135deg,#34d399,#3b82f6); }
+.pink-rose { background: linear-gradient(135deg,#ec4899,#f43f5e); }
+.cyan-teal { background: linear-gradient(135deg,#06b6d4,#14b8a6); }
+
+.aboutus-team-member-name { color:#6d28d9; font-weight:600; font-size:1.125rem; margin-bottom:0.25rem; }
+.aboutus-team-member-role { color:#4b5563; }
+
+/* Ensure about content wrapper exists and has consistent spacing */
+.aboutus-about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Photo used in the "We Are EduCo" section */
+.aboutus-about-photo {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  border-radius: 1rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* Improve default desktop layout (keeps existing two-column look but makes it more robust) */
+.aboutus-we-are-educo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Responsive: stack the "We Are EduCo" section on small screens */
+@media (max-width: 767px) {
+  .aboutus-we-are-educo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* Make content appear above the photo and improve spacing/typography */
+  .aboutus-about-content {
+    order: 1;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .aboutus-about-content .aboutus-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .aboutus-about-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4b5563;
+  }
+
+  .aboutus-about-photo {
+    order: 2;
+    width: 100%;
+    max-height: 220px;
+    margin-top: 6px;
+  }
+}
+
+/* Small phones: tighten spacing and font sizes */
+@media (max-width: 420px) {
+  .aboutus-about-content .aboutus-section-title {
+    font-size: 1.35rem;
+  }
+
+  .aboutus-about-text {
+    font-size: 0.92rem;
+  }
+
+  .aboutus-about-photo {
+    max-height: 180px;
+  }
+  .offer-card {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 10px 1px;
+    width: 140px;
+    text-align: center;
+    transition: transform 0.3s 
+ease, box-shadow 0.3s 
+ease;
+}
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .aboutus-hero, .aboutus-we-are-educo, .aboutus-why-choose-us { grid-template-columns: 1fr; padding:1.25rem; }
+  .aboutus-features-grid { grid-template-columns: repeat(2,1fr); }
+  .aboutus-team-grid { grid-template-columns: 1fr; }
+  .aboutus-hero-illustration { height:12rem; }
+  .aboutus-team-member-photo { height:10rem; }
+  .offer-grid {
+    display: grid
+;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+}
+
+/* 📱 Mobile Devices (320px–480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .aboutus-container { margin: 1rem auto; padding: 0 0.75rem; }
+
+  /* Hero: single-column grid and explicit ordering: heading -> subtitle -> image -> button */
+  .aboutus-hero {
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .aboutus-hero-content { display: contents; }
+  .aboutus-hero-title { grid-row: 1; }
+  .aboutus-hero-subtitle { 
+    grid-row: 2;
+    display: block; /* ensure subtitle is visible on mobile */
+    margin-bottom: 0.5rem;
+  }
+  .aboutus-hero-illustration { grid-row: 3; height: 9rem; }
+  .aboutus-cta-button {
+    grid-row: 4;
+    justify-self: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+   .offer-card {
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 10px 1px;
+    width: 140px;
+    text-align: center;
+    transition: transform 0.3s 
+ease, box-shadow 0.3s 
+ease;
+}
+
+  /* We Are EduCo: heading -> image -> matter */
+  .aboutus-we-are-educo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    align-items: start;
+  }
+  .aboutus-about-content { display: contents; }
+  .aboutus-about-content > .aboutus-section-title { grid-row: 1; }
+  .aboutus-about-photo { grid-row: 2; height: 16rem; }
+  .aboutus-about-content > .aboutus-about-text { grid-row: 3; }
+
+  /* Why Choose Us: heading -> image -> icons -> matter */
+  .aboutus-why-choose-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    align-items: start;
+  }
+  .aboutus-why-content { display: contents; }
+  .aboutus-why-content > .aboutus-section-title { grid-row: 1; }
+  .aboutus-why-illustration {
+    grid-row: 2;
+    justify-self: center;
+    width: 100%;
+  }
+  .aboutus-why-illustration-box { height: 9rem; min-height: 7rem; border-radius: 0.75rem; }
+  .aboutus-why-content > .aboutus-features-grid { grid-row: 3; }
+  .aboutus-why-content > .aboutus-why-text { grid-row: 4; margin-top: 0.25rem; }
+
+  /* other mobile tweaks */
+  .aboutus-features-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  .aboutus-feature-card { padding: 0.75rem; }
+  .aboutus-team-grid { grid-template-columns: 1fr; gap: 0.875rem; }
+  .aboutus-team-member-photo { height: 8rem; }
+  .aboutus-team-member { padding: 1rem; }
+}
+
+/* 📲 Tablets (481px–1024px) — match laptop view */
+@media (min-width: 767px) and (max-width: 1023px) {
+  .aboutus-container { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
+
+  /* Hero: two-column layout like laptop */
+  .aboutus-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 1.75rem;
+    border-radius: 1.5rem;
+    align-items: center;
+  }
+  .aboutus-hero-title { font-size: 2.5rem; }
+  .aboutus-hero-subtitle { display: block; font-size: 1.03rem; margin-bottom: 0.75rem; }
+  .aboutus-hero-illustration { height: 14rem; }
+
+  /* We Are EduCo: restore two-column layout */
+  .aboutus-we-are-educo { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+
+  /* Why Choose Us: two-column layout */
+  .aboutus-why-choose-us { grid-template-columns: 1fr 1fr; gap: 2.5rem; padding: 2rem; }
+
+  /* Features behave like laptop */
+  .aboutus-features-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+
+  /* Team grid & photos same as laptop */
+  .aboutus-team-grid { max-width: 720px; grid-template-columns: repeat(2,1fr); gap: 1.25rem; }
+  .aboutus-team-member-photo { height: 11rem; }
+}
+
+/* 💻 Laptops (1025px–1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .aboutus-container { max-width: 1200px; margin: 0rem auto; }
+  .aboutus-hero { padding: 2rem; gap: 1.75rem; border-radius: 1.5rem; }
+  .aboutus-hero-title { font-size: 2.5rem; }
+  .aboutus-hero-illustration { height: 14rem; }
+  .aboutus-features-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .aboutus-team-grid { max-width: 720px; }
+  .aboutus-team-member-photo { height: 11rem; }
+  .aboutus-why-choose-us {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+}
+
+/* 🖥 Desktops (1441px–1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .aboutus-container { max-width: 1400px; margin: 0rem auto; padding: 0 1.5rem; }
+  .aboutus-hero { padding: 2.5rem; gap: 2rem; }
+  .aboutus-hero-title { font-size: 3rem; }
+  .aboutus-hero-illustration { height: 18rem; }
+  .aboutus-features-grid { gap: 1.25rem; }
+  .aboutus-team-grid { max-width: 900px; gap: 1.5rem; }
+  .aboutus-team-member-photo { height: 12rem; }
+  .aboutus-why-choose-us {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+}
+
+/* 🧠 Extra Large Screens (1921px and above) */
+@media (min-width: 1921px) {
+  .aboutus-container { max-width: 1600px; margin: 4rem auto; padding: 0 2rem; }
+  .aboutus-hero { padding: 3rem; gap: 2.5rem; }
+  .aboutus-hero-title { font-size: 3.5rem; }
+  .aboutus-hero-illustration { height: 22rem; }
+  .aboutus-features-grid { gap: 1.5rem; }
+  .aboutus-team-grid { max-width: 1100px; gap: 1.75rem; }
+  .aboutus-team-member-photo { height: 14rem; }
+}

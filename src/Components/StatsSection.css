@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #222;
+}
+
+.stat-img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.stat-info h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.stat-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 601px) and (max-width: 768px) {
+ .stats-section {
+        /* flex-direction: column; */
+        display: flex
+;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-content: flex-start;
+    }
+
+  .stat-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stat-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
+    justify-items: center;
+  }
+
+  /* Make the last one centered and alone on the next row */
+  .stat-item:nth-child(3) {
+    grid-column: span 2;
+    justify-content: center;
+  }
+
+  .stat-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0px
+  }
+
+  .stat-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stat-info h2 {
+    font-size: 20px;
+  }
+
+  .stat-info p {
+    font-size: 0.9rem;
+  }
+}

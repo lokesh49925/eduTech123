@@ -1,0 +1,357 @@
+.about {
+  width: 100%;
+  padding: 40px 10%;
+  background-color: #f8f9fc;
+  box-sizing: border-box;
+}
+
+/* Main layout */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* center the image block so it sits above content on narrow widths */
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  object-fit: cover;
+  height: auto;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-content h4 {
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.learn-btn {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learn-btn:hover {
+  background-color: #5750e0;
+}
+
+/* ----------- STATS SECTION ----------- */
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9e9ef;
+  padding: 24px 28px; /* increased padding for the rounded card look */
+  border-radius: 30px;
+  margin-top: 30px;
+  gap: 20px;
+  max-width: 640px; /* constrain width and center */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 6px 18px rgba(63, 61, 86, 0.06);
+  flex-wrap: wrap; /* allow two-column layout on small screens */
+}
+
+.stat {
+  flex: 0 0 45%; /* two per row on narrow viewports */
+  min-width: 140px;
+  text-align: center;
+}
+
+/* slightly smaller number size to fit mobile card */
+.stat h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 18px;
+  color: #3f3d56;
+}
+
+.stat p {
+  color: #555;
+  font-size: 20px;
+}
+
+@media (min-width: 901px) {
+  .about-image-mobile {
+    display: none;
+  }
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (min-width: 601px) and (max-width: 900px) {
+ 
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-mobile {
+    width: 100px;
+  }
+
+  .about-image-mobile img {
+    width: 480px;
+  }
+
+  .about-image {
+    
+    display: none;
+  }
+
+  .about-content {
+    order: 2;
+    margin-top: 0;
+  }
+
+  /* make image a bit narrower on tablets */
+  .about-image img {
+    max-width: 420px;
+  }
+
+  /* center stats and keep two-per-row */
+  .about-stats {
+    justify-content: center;
+        padding: 14px;
+        gap: 6px;
+        display: flex
+;
+    background-color: #e9e9ef;
+    border-radius: 30px;
+    margin-top: 30px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 18px rgba(63, 61, 86, 0.06);
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    flex: 0 0 45%;
+  }
+  .stat h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 18px;
+    color: #3f3d56;
+}
+ .stat p {
+    color: #555;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 600px) {
+  .about-image {
+    display: none;
+  }
+   .about-image-mobile img {
+    width: 380px;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .about-stats {
+    justify-content: center;
+  }
+
+  .stat {
+    flex: 0 0 45%;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .learn-btn {
+    padding: 10px 20px;
+  }
+
+  .about-image img {
+    max-width: 360px;
+  }
+
+  .stat h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px;
+    color: #3f3d56;
+  }
+  .stat p {
+    color: #555;
+    font-size: 12px;
+  }
+  .about-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+  .about-content {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+  .about-stats {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #e9e9ef;
+    padding: 6px 0px;
+    border-radius: 30px;
+    margin-top: 22px;
+    gap: 0px;
+    /* max-width: 640px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    box-shadow: 0 6px 18px rgba(63, 61, 86, 0.06);
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 370px) {
+    .about-image-mobile img {
+        width: 280px;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .about {
+        padding: 40px 5%;
+        box-sizing: border-box;
+    }
+
+    .about-content {
+        flex: 1;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-stats {
+        display: flex;
+        justify-content: space-between;
+        background-color: #e9e9ef;
+        padding: 12px; /* reduced padding to help two-per-row */
+        border-radius: 30px;
+        margin-top: 22px;
+        gap: 8px;
+        box-shadow: 0 6px 18px rgba(63, 61, 86, 0.06);
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .stat {
+        flex: 0 0 calc(50% - 8px); /* two per row */
+        min-width: 120px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .stat h3 {
+        font-size: 25px;
+        margin: 14px;
+    }
+
+    .stat p {
+        color: #555;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+  /* keep the main layout side-by-side on large screens */
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* make the stats card wider and laid out in a single row */
+  .about-stats {
+    max-width: 960px;
+        padding: 13px 18px;
+        gap: 24px;
+        /* justify-content: space-between; */
+        flex-wrap: nowrap;
+  }
+
+  /* four items in a row, evenly spaced */
+  .stat {
+    flex: 0 0 22%;
+    min-width: 180px;
+    text-align: center;
+  }
+
+  .stat h3 {
+    font-size: 35px;
+    margin: 12px 0;
+    color: #3f3d56;
+  }
+
+  .stat p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* ensure the image block is visible on large screens */
+  .about-image {
+    display: flex;
+  }
+
+  .about-image img {
+    max-width: 400px;
+  }
+}

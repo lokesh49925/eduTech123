@@ -1,0 +1,44 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body setup */
+body {
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* General container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Smooth scroll for navigation */
+html {
+  scroll-behavior: smooth;
+}

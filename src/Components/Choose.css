@@ -1,0 +1,179 @@
+.choose-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.choose-header .sub-title {
+    color: #727277;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.choose-header .sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #000000;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.choose-header .main-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.choose-grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styles */
+.choose-card {
+  background: #fff;
+  border-radius: 15px;
+
+  padding: 14px 15px;
+  max-width: 300px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+
+.choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(90, 94, 224, 0.2);
+}
+
+.w-icon {
+  font-size: 2.5rem;
+  color: #5a5ee0;
+  margin-bottom: 1px;
+}
+
+.choose-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.choose-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 🌐 RESPONSIVENESS */
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+  .choose-header .main-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .choose-grid {
+   
+    gap: 5px;
+  }
+  .choose-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px 25px;
+    max-width: 350px;
+    text-align: left;
+    transition: all 0.3s 
+ease;
+}
+.choose-card p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+  .choose-section {
+    text-align: center;
+    padding: 11px 20px;
+    background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+/* Tablet (601–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+  }
+  .choose-section {
+    text-align: center;
+    padding: 10px 65px;
+    background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+    .choose-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 5px 29px;
+        max-width: 300px;
+        text-align: left;
+        transition: all 0.3s 
+ease;
+    }
+    .choose-card p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.choose-header .main-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 31px;
+}
+
+}
+
+/* Laptop (901–1439px) */
+@media (min-width: 901px) and (max-width: 1439px) {
+  .choose-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .choose-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 8px 10px;
+    max-width: 300px;
+    text-align: left;
+    transition: all 0.3s 
+ease;
+}
+.choose-section {
+    text-align: center;
+    padding: 8px 55px;
+    background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+/* Desktop (≥1440px) */
+@media (min-width: 1440px) {
+  .choose-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .choose-section {
+    text-align: center;
+    padding: 28px 120px;
+    background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+}
